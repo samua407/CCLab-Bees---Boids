@@ -1,3 +1,6 @@
+//USING OFXBOIDS ADD-ON
+
+
 #include "testApp.h"
 #include <iostream>
 #include <GLUT/GLUT.h>
@@ -92,7 +95,7 @@ void testApp::draw()
 		glPushMatrix();
 		glTranslatef(boids[i].position.x, boids[i].position.y, boids[i].position.z);
 		
-        GLfloat color[] = { 0.8, 0.2, 0.2, 1.0 };
+        GLfloat color[] = { 0.9, 0.9, 0.2, 1.0 };
         
 		glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE, color);
 		glCallList(1);
@@ -120,7 +123,6 @@ void testApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void testApp::mouseMoved(int x, int y ){
-    
 
 }
 
@@ -133,7 +135,6 @@ void testApp::mouseDragged(int x, int y, int button){
 void testApp::mousePressed(int x, int y, int button){
     
     mouseD = true;
-
 
 }
 
